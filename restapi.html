@@ -1,63 +1,82 @@
+<br>
 What is REST API?
-
+<br>
 First let's explain what is an API!
-
+<p>
 The API stands for Application Programming Interface.That explained in 
 simple words means a way for a given program to expose some of it's functionality
 to other applications in strictly defined manner which serves as a contract
 between them to communicate and exchange data.
-
+</p>
+<p>
 Since there are many types of API's (e.g used in desktop apps or web apps),
 the Rest API is an architectural pattern used for communication
 between web applications.The two parts that communicate are 
 called client and server.The client is sending the calls and the server responds in 
 strictly defined manner.
+</p>
+<br>
+<p>
 
 The API in web applications allows the app to exchange data independently 
 between the backend of particular app and it's frontend or 
 other application's frontend or backend.
-
+</p>
+<br>
+<p>
 Now we have an idea what means API.Let's see what the REST means!
 REST stands for Representational State Transfer.The main constraints
 that have to be followed by one app in terms to be RESTful are the following:
+</p>
 
+<p>
 Client-Server architecture:
-The client server uses separation of concerns (frontend  and backend)
-
+The client server uses separation of concerns (frontend  and backend).
+</p>
+<p>
 Stateless communication:
 The communication sessions(packages/calls to server) are independent from each-other.
-
+</p>
+<p>
 Cacheability:
 Responses can implicitly define themselves as cacheable or non-cacheable.This functionality
 allows the client to cache some of the calls and eliminates some of the 
 redundant calls to the server.Cache can also be stored in CDN(content delivery network)servers
 for broader accessibility if it is used by many clients frequently.
-
+</p>
+<p>
 Layered structure:
 Not all the communication between client and server is being executed directly.
 Sometimes the calls are being passed trough intermediary servers for load balance,
 scalability or security reasons.This is normally not known by the client.
-
+</p>
+<p>
 Code on Demand:
 Servers have the ability to extend the client functionality by transferring
 executable code:client side JavaScript scripts or Java applets.
-
-Uniform Interface:
+</p>
+<p>
+    Uniform Interface:
 The uniform interface is the fundamental concept for the REST API.
 This allows us to decouple the architecture(client - server):
-
+    </p>
+    <p>
         Resource idendtification in the requests(resources are independent of 
         how they will be represented to the client e.g same data in the database can be
         returned to the client as an XML or JSON,HTML and more...)
+    </p>
 
-        
+    <p>
         Resource manipulation through representations:If the client have
         enough information to modify or delete the data he is allowed to do it!
-
+    </p>
+    <p>    
         Self Descriptive Messages:
         Each message contains enough data to describe how to be processed.
-
+    </p>
+    <p>  
         Hypermedia as the engine of application state(HATEOAS)- If the user have
         the base URI,a client should be able to dynamically and indepently discover
         all the resources when appropriate links are provided without strictly defined 
         and enforced structure.
+    </p> 
