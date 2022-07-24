@@ -13,49 +13,19 @@
      <link rel="stylesheet" href="styles.css">
 
      <title>Resolversoft</title>
+     <script type=module src="main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ResolverSoft</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="#">
-                <span class="hidden">Resolversoft</span>
-              </a>
-            <button 
-            	class="navbar-toggler" 
-            	type="button" 
-            	data-bs-toggle="collapse" 
-            	data-bs-target="#toggleMobileMenu" 
-            	aria-controls="toggleMobileMenu" 
-            	aria-expanded="false" 
-            	aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            
-                <ul class="navbar-nav ms-auto text-center">
-                    <li>
-                        <a class="nav-link" href="#">Tutorials</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </nav>
-      </div>
-      <div class="container">
+        <my-header></my-header>
+        <div class="container">
+      
         <h1>Welcome to Resolversoft</h1>
         <h4>The Place for knowledge</h4>
+        </div>
       </div>
-
       <div class="container">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -64,7 +34,7 @@
               <p class="card-text">Explaining the most important concepts about the REST API's 
                 and rest services.
               </p>
-              <a href="restapi.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Read more...</a>      
+              <a href="content/restapi.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Read more...</a>      
             </div>
           </div>
       </div>
